@@ -16,10 +16,10 @@ const ExerciseScreen = () => {
 
 const styles = StyleSheet.create({
     textStyle1: {
-        color: '#eb9719',
+        color: '#eb9719'
     },
     textStyle2: {
-        color: '#ee1414',
+        color: '#ee1414'
     },
 })
 
