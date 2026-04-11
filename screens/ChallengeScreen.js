@@ -12,8 +12,8 @@ const cities = [
 
 const ChallengeScreen = () => {
     return (
-        <View style={styles.container}>
-            <Text style={styles.textStyle}>List of cities:</Text>
+        <View>
+            <Text style={styles.infoStyle}>List of cities:</Text>
             <FlatList 
                 data={cities}
                 renderItem={({item}) => {
@@ -25,17 +25,11 @@ const ChallengeScreen = () => {
 }
 
 const styles = StyleSheet.create({
-    textStyle: {
-        color: "white"
-    },
     infoStyle: {
         borderWidth: 2,
-        borderColor: "white",
-        color: "white"
+        borderColor: "black",
+        // color: "white"
     },
-    container: {
-        backgroundColor: "black"
-    }
 })
 
 export default ChallengeScreen;

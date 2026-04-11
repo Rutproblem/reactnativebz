@@ -17,7 +17,7 @@ export default function App() {
       initialRouteName='Challenge'
       screenOptions={{
         title: 'App',
-        cardStyle: { backgroundColor: 'black' }
+        cardStyle: { backgroundColor: 'darkgray' }
       }}>
         <Stack.Screen name="Home" component={MainScreen}></Stack.Screen>
         <Stack.Screen name="Test" component={TestScreen}></Stack.Screen>
