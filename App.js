@@ -7,6 +7,7 @@ import MainScreen from './screens/MainScreen';
 import ListScreen from './screens/ListScreen';
 import TestScreen from './screens/TestScreen';
 import ChallengeScreen from './screens/ChallengeScreen';
+import Challenge5Screen from './screens/Challenge5Screen';
 
 const Stack = createStackNavigator();
 
@@ -14,7 +15,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator
-      initialRouteName='Challenge'
+      initialRouteName='Challenge5'
       screenOptions={{
         title: 'App',
         cardStyle: { backgroundColor: 'darkgray' }
@@ -24,6 +25,7 @@ export default function App() {
         <Stack.Screen name="Exercise" component={ExerciseScreen}></Stack.Screen>
         <Stack.Screen name="List" component={ListScreen}></Stack.Screen>
         <Stack.Screen name="Challenge" component={ChallengeScreen}></Stack.Screen>
+        <Stack.Screen name="Challenge5" component={Challenge5Screen}></Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>
   );
