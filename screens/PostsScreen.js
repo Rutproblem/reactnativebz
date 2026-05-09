@@ -25,6 +25,7 @@ class PostsScreen extends React.Component{
                     <View>
                         <Text>{item.id}</Text>
                         <Text>{item.title}</Text>
+                        <Text>{item.body}</Text>
                     </View>
                 )}
                 ></FlatList>
