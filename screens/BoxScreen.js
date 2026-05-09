@@ -15,12 +15,15 @@ const BoxScreen = () => {
 const styles = StyleSheet.create({
     viewStyle: {
     flex: 1,
-    flexDirection: 'row',
+    flexDirection: 'column',
+    justifyContent: 'space-evenly',
+    alignItems: 'flex-end',
     },
     box1: {
         width: 50,
         height: 50,
         backgroundColor: 'powderblue',
+        alignSelf: 'flex-start',
     },
     box2: {
         width: 50,
