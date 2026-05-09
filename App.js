@@ -2,31 +2,33 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import ExerciseScreen from './screens/ExerciseScreen';
 import MainScreen from './screens/MainScreen';
+import ExerciseScreen from './screens/ExerciseScreen';
 import ListScreen from './screens/ListScreen';
-import TestScreen from './screens/TestScreen';
-import ChallengeScreen from './screens/ChallengeScreen';
-import Challenge5Screen from './screens/Challenge5Screen';
 import ButtonScreen from './screens/ButtonScreen';
+import MenuScreen from './screens/MenuScreen';
+import StudentScreen from './screens/StudentScreen';
+import ProfileScreen from './screens/ProfileScreen';
+import BoxScreen from './screens/BoxScreen';
 
 const Stack = createStackNavigator();
 
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator
-      initialRouteName='Button'
+      <Stack.Navigator 
+      initialRouteName='Menu'
       screenOptions={{
-        title: 'App',
+        title: 'App'
       }}>
-        <Stack.Screen name="Home" component={MainScreen}></Stack.Screen>
-        <Stack.Screen name="Test" component={TestScreen}></Stack.Screen>
+        <Stack.Screen name="Main" component={MainScreen}></Stack.Screen>
         <Stack.Screen name="Exercise" component={ExerciseScreen}></Stack.Screen>
         <Stack.Screen name="List" component={ListScreen}></Stack.Screen>
-        <Stack.Screen name="Challenge" component={ChallengeScreen}></Stack.Screen>
-        <Stack.Screen name="Challenge5" component={Challenge5Screen}></Stack.Screen>
         <Stack.Screen name="Button" component={ButtonScreen}></Stack.Screen>
+        <Stack.Screen name="Menu" component={MenuScreen}></Stack.Screen>
+        <Stack.Screen name="Students" component={StudentScreen}></Stack.Screen>
+        <Stack.Screen name="Profile" component={ProfileScreen}></Stack.Screen>
+        <Stack.Screen name="Box" component={BoxScreen}></Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>
   );
@@ -35,7 +37,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#ffffff',
+    backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
   },
