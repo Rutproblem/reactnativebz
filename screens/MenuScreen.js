@@ -28,6 +28,12 @@ const MenuScreen = (props) => {
                 >
                 <Text style={styles.touch}>Box Screen</Text>
             </TouchableOpacity>
+
+            <TouchableOpacity
+                onPress={() => props.navigation.navigate("Posts")}
+                >
+                <Text style={styles.touch}>Posts Screen</Text>
+            </TouchableOpacity>
         </View>
     )
 }
