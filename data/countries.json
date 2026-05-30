@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "Cappadocia",
+        "country": "Turkiye",
+        "description": "Cappadocia, a semi-arid region in central Turkiye"
+    },
+    {
+        "id": 2,
+        "name": "Banaue",
+        "country": "Philippines",
+        "description": "Banaue, a municipality in the Philippines"
+    },
+    {
+        "id": 3,
+        "name": "Vienna",
+        "country": "Austria",
+        "description": "Austria's capital city anad famed cultural hub"
+    }
+]
