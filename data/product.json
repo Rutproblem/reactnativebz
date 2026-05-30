@@ -1,0 +1,11 @@
+[
+    {
+        "id": 1,
+        "name": "iphone 17",
+        "category": "phone",
+        "price": "$2200",
+        "stock": 500,
+        "image": "phoneimgithink.png",
+        "description": "iphone-i i 17-ti"
+    }
+]
