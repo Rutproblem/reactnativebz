@@ -48,11 +48,12 @@ const styles = StyleSheet.create({
         textAlign: 'center'
     },
     price: {
-        borderWidth: 2,
+        borderWidth: 52,
         borderColor: "#1a9371",
         paddingHorizontal: 10,
         fontSize: 32,
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        textAlign: 'center'
     }
 });
 

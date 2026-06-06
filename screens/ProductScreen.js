@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, FlatList, StyleSheet } from 'react-native';
+import { View, Text, Image, FlatList, StyleSheet, ScrollView } from 'react-native';
 import data from '../data/product.json';
 import Products from '../Products';
 
@@ -21,22 +21,24 @@ class ProductScreen extends React.Component{
         return(
             <View style={StyleSheet.container}>
                 <Text style={StyleSheet.title}>Product Screen</Text>
-                <FlatList
-                    data={this.state.product}
-                    showsVerticalScrollIndicator={false}
-                    keyExctrator={product => product.id}
-                    renderItem={({item}) => (
-                        <View style={StyleSheet.cardItem}>
-                            <Products
-                                name={item.name}
-                                category={item.category}
-                                price={item.price}
-                                stock={item.stock}
-                                image={item.image}
-                                description={item.description}
-                            ></Products>
-                        </View>)}>
-                </FlatList>
+                <ScrollView>
+                    <FlatList
+                        data={this.state.product}
+                        showsVerticalScrollIndicator={true}
+                        keyExctrator={product => product.id}
+                        renderItem={({item}) => (
+                            <View style={StyleSheet.cardItem}>
+                                <Products
+                                    name={item.name}
+                                    category={item.category}
+                                    price={item.price}
+                                    stock={item.stock}
+                                    image={item.image}
+                                    description={item.description}
+                                ></Products>
+                            </View>)}>
+                    </FlatList>
+                </ScrollView>
             </View>
         )
     }
