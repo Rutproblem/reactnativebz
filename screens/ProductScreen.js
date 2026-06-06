@@ -1,6 +1,7 @@
 import React from "react";
 import { View, Text, FlatList, StyleSheet } from 'react-native';
 import data from '../data/product.json';
+import Products from '../Products.js';
 
 class ProductScreen extends React.Component{
     constructor() {
