@@ -1,11 +1,29 @@
 [
     {
         "id": 1,
-        "name": "iphone 17",
+        "name": "Iphone 17",
         "category": "phone",
         "price": "$2200",
         "stock": 500,
-        "image": "phoneimgithink.png",
+        "image": "https://istyle.mk/cdn/shop/files/IMG-18066212_m_jpeg_1_fbb695e1-4f22-431f-b479-ac50df839d1f.jpg?v=1758153788",
         "description": "We made this in a Chinese sweatshop for $0.05 an hour."
+    },
+    {
+        "id": 2,
+        "name": "Iphone 21",
+        "category": "phone",
+        "price": "$2400",
+        "stock": 500,
+        "image": "https://www.jumpplus.com/cdn/shop/files/IMG-18057180_m_jpeg_1_fd21ed79-b34b-4de3-8494-f5dd3e680c5b.jpg?v=1765494610",
+        "description": "We made this in a Chinese sweatshop for $0.04 an hour."
+    },
+    {
+        "id": 3,
+        "name": "Iphone 25",
+        "category": "phone",
+        "price": "$2400",
+        "stock": 500,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIHulS9VNefwqV9UmnCCo7bpVtScuwDFlBDQ&s",
+        "description": "We made this in a Chinese sweatshop for $0.03 an hour."
     }
 ]

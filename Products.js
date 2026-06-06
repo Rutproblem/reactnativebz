@@ -1,19 +1,19 @@
 import React from "react";
-import { View, Text, StyleSheet, FlatList, ScrollView } from "react-native";
+import { View, Text, StyleSheet, Image, FlatList, ScrollView } from "react-native";
 
 const Products = (props) => {
     return(
-        <View>
-            <Image>
+        <View style={styles.cardContainer}>
+            <Image
                 source={{url: props.img}}
                 style={styles.img}
                 resizeMode="contain"
-            </Image>
+            />
             <View>
-                <Text>{props.name}</Text>
-                <Text>{props.description}</Text>
+                <Text style={styles.name}>{props.name}</Text>
+                <Text style={styles.desc}>{props.description}</Text>
                 <View>
-                    <Text>{props.price}</Text>
+                    <Text style={styles.price}>{props.price}</Text>
                 </View>
             </View>
         </View>

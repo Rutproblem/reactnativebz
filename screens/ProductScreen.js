@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, FlatList, StyleSheet } from 'react-native';
 import data from '../data/product.json';
-import Products from '../Products.js';
+import Products from '../Products';
 
 class ProductScreen extends React.Component{
     constructor() {
@@ -19,9 +19,24 @@ class ProductScreen extends React.Component{
 
     render() {
         return(
-            <View>
-                <Text style={StyleSheet.screenTitle}>Product Screen</Text>
-                <FlatList data={this.state.product} keyExctrator={product => product.id} renderItem={({item}) => (<View style={StyleSheet.cardWrapper}><Text>Product name: {item.name}</Text> <Text>Product category: {item.category}</Text> <Text>Product price: {item.price}</Text><Text>Product stock: {item.stock}</Text><Text>Product image: {item.image}</Text><Text>Product description: {item.description}</Text></View>)}></FlatList>
+            <View style={StyleSheet.container}>
+                <Text style={StyleSheet.title}>Product Screen</Text>
+                <FlatList
+                    data={this.state.product}
+                    showsVerticalScrollIndicator={false}
+                    keyExctrator={product => product.id}
+                    renderItem={({item}) => (
+                        <View style={StyleSheet.cardItem}>
+                            <Products
+                                name={item.name}
+                                category={item.category}
+                                price={item.price}
+                                stock={item.stock}
+                                image={item.image}
+                                description={item.description}
+                            ></Products>
+                        </View>)}>
+                </FlatList>
             </View>
         )
     }
